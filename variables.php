@@ -52,11 +52,33 @@ echo $string_three;
 $string_three = 'Learning to display ';
 $string_three .= '"Hello ';
 $string_three .= $name;
-$string_three .= '" to the screen.';
+$string_three .= '" to the screen.' . "\n";
 // Prepend to a variable
 $string_three = 'I am ' .$string_three;
 
 echo "\n";
 echo $string_three;
+
+$isReady = true;
+var_dump($isReady);
+$isReady = false;
+var_dump($isReady);
+
+var_dump(1 + "2");
+
+$a = 10;
+$b = '10';
+
+var_dump($a == $b);
+var_dump($a === $b);
+
+if ($a == 2) {
+    echo 'the values match';
+} elseif ($a == 10) {
+    echo 'a is 10';
+} else {
+    echo 'the values DO NOT match';
+}
+
 
 ?>
