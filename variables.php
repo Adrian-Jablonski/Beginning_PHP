@@ -6,7 +6,6 @@ $num_three = 3;
 
 
 // ##### Numbers #####
-
 // var_dump shows type of the input;
 /*var_dump($num_one);
 var_dump(1);
@@ -32,7 +31,6 @@ $a += 5;
 var_dump($a);
 
 // #### Strings ####
-
 $name = 'Adrian';
 $string_single_quote = 'Hello $name!'; // Returns Hello $name
 $string_double_quote = "Hello $name!"; // returns Hell Adrian
@@ -43,4 +41,22 @@ echo $string_double_quote;
 $string_three = "Learning to display \"Hello $name\" to the screen.";
 echo "\n";
 echo $string_three;
+
+// String dot contatenation
+$string_three = 'Learning to display "Hello ' . $name . '" to the screen.';
+
+echo "\n";
+echo $string_three;
+
+// String dot equals concatenation
+$string_three = 'Learning to display ';
+$string_three .= '"Hello ';
+$string_three .= $name;
+$string_three .= '" to the screen.';
+// Prepend to a variable
+$string_three = 'I am ' .$string_three;
+
+echo "\n";
+echo $string_three;
+
 ?>
